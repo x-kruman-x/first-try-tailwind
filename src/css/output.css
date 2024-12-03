@@ -624,10 +624,6 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -636,12 +632,24 @@ h2 {
   margin-bottom: 10px;
 }
 
+.mb-\[144px\] {
+  margin-bottom: 144px;
+}
+
 .mb-\[24px\] {
   margin-bottom: 24px;
 }
 
 .mb-\[30px\] {
   margin-bottom: 30px;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mr-\[300px\] {
+  margin-right: 300px;
 }
 
 .mt-\[150px\] {
@@ -680,6 +688,26 @@ h2 {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[746\[x\]\] {
+  width: 746[x];
+}
+
+.w-\[746\[\]\] {
+  width: 746[];
+}
+
+.w-\[746px\] {
+  width: 746px;
+}
+
+.max-w-\[748px\] {
+  max-width: 748px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -708,6 +736,10 @@ h2 {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -718,6 +750,10 @@ h2 {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-\[24px\] {
@@ -732,8 +768,16 @@ h2 {
   gap: 48px;
 }
 
+.gap-\[57px\] {
+  gap: 57px;
+}
+
 .gap-\[84px\] {
   gap: 84px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
 }
 
 .gap-x-\[48px\] {
@@ -757,10 +801,6 @@ h2 {
   border-width: 1px;
 }
 
-.border-none {
-  border-style: none;
-}
-
 .border-\[\#C5C6C7\] {
   --tw-border-opacity: 1;
   border-color: rgb(197 198 199 / var(--tw-border-opacity, 1));
@@ -768,6 +808,10 @@ h2 {
 
 .border-copper {
   border-color: rgba(183, 151, 110, 1);
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-\[\#12100F\] {
@@ -783,16 +827,20 @@ h2 {
   background-color: rgb(0 0 0 / 0.8);
 }
 
+.bg-copper {
+  background-color: rgba(183, 151, 110, 1);
+}
+
 .bg-defaultBackground {
   background-color: rgba(18, 16, 15, 1);
 }
 
-.bg-white\/10 {
-  background-color: rgb(255 255 255 / 0.1);
-}
-
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-white\/10 {
+  background-color: rgb(255 255 255 / 0.1);
 }
 
 .bg-city-property {
@@ -801,6 +849,10 @@ h2 {
 
 .bg-country-houses {
   background-image: url("../assets/img/country-houses.jpg");
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .bg-house-in-twilight {
@@ -815,12 +867,26 @@ h2 {
   background-image: url("../assets/img/our-projects.jpg");
 }
 
+.bg-parallax-background {
+  background-image: url("../assets/img/parallax-background.jpg");
+}
+
 .bg-submit-application {
   background-image: url("../assets/img/submit-application.jpg");
 }
 
+.from-\[\#00000000\] {
+  --tw-gradient-from: #00000000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
 }
 
 .bg-center {
@@ -884,6 +950,11 @@ h2 {
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+.py-\[219px\] {
+  padding-top: 219px;
+  padding-bottom: 219px;
 }
 
 .py-\[65px\] {
@@ -971,6 +1042,10 @@ h2 {
   line-height: 56px;
 }
 
+.leading-3 {
+  line-height: .75rem;
+}
+
 .text-copper {
   color: rgba(183, 151, 110, 1);
 }
@@ -978,6 +1053,14 @@ h2 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-whitegray {
+  color: rgba(197, 198, 199, 1);
+}
+
+.text-\[112\] {
+  color: 112;
 }
 
 .transition {
@@ -1107,6 +1190,10 @@ h2 {
   content: var(--tw-content);
 }
 
+.hover\:border-\[1px\]:hover {
+  border-width: 1px;
+}
+
 .hover\:border-copper:hover {
   border-color: rgba(183, 151, 110, 1);
 }
@@ -1142,19 +1229,8 @@ h2 {
   outline-offset: 2px;
 }
 
-.focus\:ring:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
 .focus-visible\:border-copper:focus-visible {
   border-color: rgba(183, 151, 110, 1);
-}
-
-.focus-visible\:outline-none:focus-visible {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:bg-black\/30 {

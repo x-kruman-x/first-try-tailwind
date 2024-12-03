@@ -21,7 +21,8 @@ module.exports = {
         'city-property': 'url("../assets/img/city-property.jpg")',
         'our-projects': 'url("../assets/img/our-projects.jpg")',
         'legal-services': 'url("../assets/img/legal-services.jpg")',
-        'submit-application': 'url("../assets/img/submit-application.jpg")'
+        'submit-application': 'url("../assets/img/submit-application.jpg")',
+        'parallax-background': 'url("../assets/img/parallax-background.jpg")'
       },
       colors: {
         copper: "rgba(183, 151, 110, 1)",
