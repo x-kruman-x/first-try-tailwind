@@ -656,20 +656,16 @@ h2 {
   margin-bottom: 50px;
 }
 
+.mb-\[64px\] {
+  margin-bottom: 64px;
+}
+
 .mr-\[300px\] {
   margin-right: 300px;
 }
 
 .mt-\[150px\] {
   margin-top: 150px;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[64px\] {
-  margin-bottom: 64px;
 }
 
 .flex {
@@ -688,6 +684,10 @@ h2 {
   height: 1px;
 }
 
+.h-\[220px\] {
+  height: 220px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -696,16 +696,20 @@ h2 {
   height: 100%;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .w-1\/4 {
   width: 25%;
+}
+
+.w-\[2px\] {
+  width: 2px;
 }
 
 .w-\[746px\] {
@@ -714,22 +718,6 @@ h2 {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-\[2px\] {
-  width: 2px;
 }
 
 .max-w-\[748px\] {
@@ -756,12 +744,12 @@ h2 {
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
-.flex-col {
-  flex-direction: column;
+.grid-rows-accordion-items {
+  grid-template-rows: repeat(4, minmax(0, auto));
 }
 
-.items-start {
-  align-items: flex-start;
+.flex-col {
+  flex-direction: column;
 }
 
 .items-end {
@@ -770,10 +758,6 @@ h2 {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
@@ -788,12 +772,20 @@ h2 {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .gap-\[20px\] {
@@ -820,12 +812,8 @@ h2 {
   gap: 84px;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
-.gap-10 {
-  gap: 2.5rem;
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-x-\[48px\] {
@@ -871,6 +859,10 @@ h2 {
   background-color: rgb(18 16 15 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#FFFFFF33\] {
+  background-color: #FFFFFF33;
+}
+
 .bg-black\/55 {
   background-color: rgb(0 0 0 / 0.55);
 }
@@ -897,19 +889,6 @@ h2 {
 
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
-}
-
-.bg-\[\#FFFFFF33\] {
-  background-color: #FFFFFF33;
-}
-
-.bg-\[\43A\443\432\] {
-  background-color: кув;
-}
-
-.bg-\[red\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-alabino-gradient-horizontal {
@@ -952,16 +931,16 @@ h2 {
   background-image: url("../assets/img/partner-background.jpg");
 }
 
-.bg-submit-application {
-  background-image: url("../assets/img/submit-application.jpg");
-}
-
 .bg-partner-gradient-horizontal {
   background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.64) 50%, rgba(0,0,0,1) 100%);
 }
 
 .bg-partner-gradient-vertical {
   background-image: linear-gradient(180deg, rgba(18,16,15,0) 0%, rgba(18,16,15,0.5) 100%);
+}
+
+.bg-submit-application {
+  background-image: url("../assets/img/submit-application.jpg");
 }
 
 .bg-cover {
@@ -1040,6 +1019,11 @@ h2 {
   padding-bottom: 219px;
 }
 
+.py-\[33px\] {
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
 .py-\[64px\] {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -1050,9 +1034,12 @@ h2 {
   padding-bottom: 65px;
 }
 
-.py-\[33px\] {
-  padding-top: 33px;
-  padding-bottom: 33px;
+.pb-\[128px\] {
+  padding-bottom: 128px;
+}
+
+.pb-\[64px\] {
+  padding-bottom: 64px;
 }
 
 .pl-\[24px\] {
@@ -1063,20 +1050,16 @@ h2 {
   padding-right: 18px;
 }
 
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[84px\] {
-  padding-top: 84px;
-}
-
 .pt-\[128px\] {
   padding-top: 128px;
 }
 
-.pb-\[64px\] {
-  padding-bottom: 64px;
+.pt-\[64px\] {
+  padding-top: 64px;
+}
+
+.pt-\[84px\] {
+  padding-top: 84px;
 }
 
 .text-left {
@@ -1115,10 +1098,6 @@ h2 {
   font-size: 48px;
 }
 
-.text-\[344px\] {
-  font-size: 344px;
-}
-
 .font-normal {
   font-weight: 400;
 }
@@ -1129,6 +1108,10 @@ h2 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
 }
 
 .leading-\[15px\] {
@@ -1155,10 +1138,6 @@ h2 {
   line-height: 56px;
 }
 
-.leading-10 {
-  line-height: 2.5rem;
-}
-
 .text-copper {
   color: rgba(183, 151, 110, 1);
 }
@@ -1182,6 +1161,12 @@ h2 {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1242,11 +1227,6 @@ h2 {
 
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
-  content: var(--tw-content);
-}
-
-.before\:content-\[url\(\'\.\/assets\/img\/open-quote\.svg\'\)\]::before {
-  --tw-content: url('./assets/img/open-quote.svg');
   content: var(--tw-content);
 }
 
