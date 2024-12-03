@@ -29,15 +29,20 @@ function updateTriggerText(button) {
 }
 
 accordion();
+function handleFormSubmit(form) {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        for (let [key, value] of formData) {
+            console.log(`${key} — ${value}`);
+        }
+        // const resp = await axios.post('URL_СЕРВЕРА', formData);
+        // console.log(resp);
+    });
+}
 
-const form = document.querySelector('#submit-with-service');
+const form1 = document.querySelector('#service-form');
+const form2 = document.querySelector('#contacts-form');
 
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(form)
-    for (let [key, value] of formData) {
-        console.log(`${key} — ${value}`)
-      }
-    // const resp = await axios.post('', formData);
-    // console.log(resp)
-})
+handleFormSubmit(form1);
+handleFormSubmit(form2);

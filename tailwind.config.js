@@ -22,7 +22,13 @@ module.exports = {
         'our-projects': 'url("../assets/img/our-projects.jpg")',
         'legal-services': 'url("../assets/img/legal-services.jpg")',
         'submit-application': 'url("../assets/img/submit-application.jpg")',
-        'parallax-background': 'url("../assets/img/parallax-background.jpg")'
+        'parallax-background': 'url("../assets/img/parallax-background.jpg")',
+        'alabino-gradient-horizontal': 'linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 50%, rgba(0,0,0,0.74) 100%)',
+        'alabino-gradient-vertical': 'linear-gradient(180deg, rgba(18,16,15,0) 0%, rgba(18,16,15,0.5) 100%)',
+        'contacts-form': 'url("../assets/img/contacts-form.jpg")',
+        'partner-background': 'url("../assets/img/partner-background.jpg")',
+        'partner-gradient-horizontal': 'linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.64) 50%, rgba(0,0,0,1) 100%)',
+        'partner-gradient-vertical': 'linear-gradient(180deg, rgba(18,16,15,0) 0%, rgba(18,16,15,0.5) 100%)',
       },
       colors: {
         copper: "rgba(183, 151, 110, 1)",
