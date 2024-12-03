@@ -10,8 +10,12 @@
         font-family: 'Tenor Sans', sans-serif;
     }
 }
-/* @layer components {
-    .container {
-        @apply max-w-[1320px] max-w-xl
+
+@layer components {
+    .accordion-item.active > .accordion-content {
+        @apply flex;
     }
-} */
+    .accordion-item.active > .accordion-img {
+        @apply rotate-180;
+    }
+}
