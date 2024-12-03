@@ -1,0 +1,155 @@
+$header: '.header';
+$video: '.video';
+$content: '.content';
+
+
+.header-page {
+    position: relative; /* Устанавливаем относительное позиционирование */
+    z-index: 1;
+#{$header} {
+    position: absolute;
+    top: 0;
+    padding: 16px 0;
+    background-color: rgba($color7, 0.5);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    z-index: 1000;
+
+    #{$header}__layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+#{$video} {
+    #{$video}-background {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        height: 1040px;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        z-index: -1000;
+        overflow: hidden;
+
+        #myVideo {
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}
+
+
+#{$content} {
+    position: relative;  
+    width: 100%;
+    top: 50%;         
+    left: 50%;        
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    #{$content}-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-titles {
+            margin-bottom: 50px;
+        }
+
+        &-subtitle {
+            @include text($color3, 600, 15px, 15px, 15px);
+        }
+
+        &-title {
+            @include text($color3, 400, 48px, 48px, 48px);
+            text-transform: uppercase;
+            font-family: "Tenor Sans";
+
+            & > span {
+                color: $color1;
+            }
+        }
+
+        &-list {
+            list-style-type: none;
+            margin-bottom: 50px;
+
+            & > li {
+                @include text($color4, 600, 15px, 15px, 15px);
+                position: relative;
+                margin-left: 40px;
+                font-family: "Mulish", sans-serif;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+
+                &::before {
+                    font-size: 11px;
+                    position: absolute;
+                    content: attr(data-count);
+                    left: -20px;
+                    top: 35%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+#{$content}-footer {
+    position: absolute;  
+    width: 100%;
+    top: 85%;         
+    left: 50%;        
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    &-layout-row-list {
+        margin-top: 128px;
+
+        list-style-type: none;
+        background-color: rgba($color7, 0.5);
+        backdrop-filter: blur(20px);
+        filter: drop-shadow(0 0 15px $color7);  
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        padding: 20px 50px;
+
+        & > li {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: "Mulish", sans-serif;
+            width: 224px;
+
+            @include text($color3, 600, 15px, 15px, 15px);
+
+            & > span {
+                text-transform: uppercase;
+                font-family: "Tenor Sans";
+                @include text($color1, 400, 28px, 28px, 28px);
+            }
+        }
+    }
+}
+}
+

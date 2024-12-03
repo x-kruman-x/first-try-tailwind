@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    color: $color3;
+    background-color: $color7;
+}
+  
+
+button,
+button:active,
+button:focus  {
+  outline: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Tenor Sans", serif;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 26px;
+}

@@ -1,0 +1,17 @@
+@mixin text($color, $weight, $size-lg, $size-l, $size-m) {
+    font-size: $size-lg;
+    font-weight: $weight;
+    color: $color;
+
+    @media screen and (max-width: $table) {
+        font-size: $size-l;
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: $size-m
+    }
+}
+
+
+
+
