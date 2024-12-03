@@ -12,32 +12,69 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
     <link rel="stylesheet" href="./css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 
 <body>
-    <section class="bg-house-in-twilight">
-        <header class="mx-auto px-5 py-4 flex items-center justify-between bg-defaultBackground">
-            <a href="#">
-                <img src="./assets/img//Logo.png" alt="logo">
-            </a>
-            <nav>
-                <ul class="flex items-center gap-[48px]">
-                    <li class="text-white font-semibold text-[15px] leading-[18px] cursor-pointer hover:text-copper hover:transition-all hover:duration-200"><a href="#">О нас</a></li>
-                    <li class="text-white font-semibold text-[15px] leading-[18px] cursor-pointer hover:text-copper hover:transition-all hover:duration-200"><a href="#">Услуги</a></li>
-                    <li class="text-white font-semibold text-[15px] leading-[18px] cursor-pointer hover:text-copper hover:transition-all hover:duration-200"><a href="#">Проекты</a></li>
-                    <li class="text-white font-semibold text-[15px] leading-[18px] cursor-pointer hover:text-copper hover:transition-all hover:duration-200"><a href="#">Отзывы</a></li>
-                    <li class="text-white font-semibold text-[15px] leading-[18px] cursor-pointer hover:text-copper hover:transition-all hover:duration-200"><a href="#">Рекомендации</a></li>
-                    <li class="text-white font-semibold text-[15px] leading-[18px] cursor-pointer hover:text-copper hover:transition-all hover:duration-200"><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <button class="border-2 border-copper py-[10px] px-[66px] text-white font-semibold text-[15px] leading-[18px] hover:bg-copper hover:transition-all hover:duration-500">Оставить заявку</button>
-        </header>
-        <div class="container mt-[150px]">
-            <p class="text-white font-semibold text-[15px] leading-[18px] mb-[10px]">Центр недвижимости</p>
-            <h2 class="text-[48px] leading-[56px] text-white">Полный комплекс услуг <span
-                    class="text-copper">в сфере<br>недвижимости</span></h2>
-        </div>
-    </section>
+        <section class="header-page">
+            <div class="video">
+                <div class="video-background">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="./assets2/Intro/intro-horizontal-hevc.mp4" type="video/mp4">
+                    </video>
+    
+                    <div class="content">
+                        <div class="container">
+                            <div class="content-layout">
+                                <div class="content-layout-titles">
+                                    <div class="content-layout-subtitle">
+                                        Центр недвижимости
+                                    </div>
+                                    <div class="content-layout-title">
+                                        Полный комплекс услуг <span>в сфере недвижимости</span>
+                                    </div>
+                                </div>
+                                <ul class="content-layout-list">
+                                    <li data-count="01">создаем уникальные коттеджные поселки</li>
+                                    <li data-count="02">помогаем выбрать недвижимость</li>
+                                    <li data-count="03">осуществляем проведение сделок</li>
+                                    <li data-count="04">получаем все необходимые разрешения</li>
+                                </ul>
+            
+                                <button class="btn">
+                                    Получить консультацию
+                                </button>
+                            </div>
+                        </div>
+                   </div>   
+                   <div class="content-footer">
+                        <div class="container">
+                            <ul class="content-footer-layout-row-list">
+                                <li>
+                                    <span>>500</span>
+                                    проведенных сделок купли-продажи недвижимости
+                                </li>
+                                <li>
+                                    <span>>750</span>
+                                    осуществленных подборов недвижимости
+                                </li>
+                                <li>
+                                    <span>>10</span>
+                                    завершенных инвестиционных проектов
+                                </li>
+                                <li>
+                                    <span>~90%</span>
+                                    успешно завершенных судебных дел
+                                </li>
+                            </ul>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
     <section class="flex relative before:absolute before:content-[''] before:bg-white/20 before:w-full before:h-[2px] before:mt-5 before:z-10 after:absolute after:content[''] after:bg-white/20 after:w-full after:h-[2px] after:mb-5 after:bottom-0">
         <button class="w-1/4 group relative overflow-hidden before:content-[''] before:absolute before:w-[2px] before:h-full before:ml-5 before:left-0 before:bg-white/20 after:absolute after:top-0 after:right-0 after:content-[''] after:w-[2px] after:h-full after:mr-5 after:bg-white/20">
             <div class="bg-country-houses bg-center bg-no-repeat bg-cover cursor-pointer w-full h-full">
@@ -304,7 +341,7 @@
                         Мы готовы помочь вам в сфере недвижимости!
                     </p>
                 </div>
-                <form id="service-form" class="grid grid-cols-2 gap-[24px] w-1/2">
+                <form id="submit-with-service" class="grid grid-cols-2 gap-[24px] w-1/2">
                     <input
                         class="border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent"
                         type="text" placeholder="Имя" name="first_name">
@@ -331,21 +368,19 @@
     </section>
     <section class="bg-parallax-background bg-fixed bg-cover bg-center">
         <div
-            class="bg-alabino-gradient-horizontal ">
-            <div class="bg-alabino-gradient-vertical flex justify-end py-[219px]">
-                <div class="max-w-[748px] mr-[300px] text-left text-white">
-                    <p class="text-[15px] leading-[18px] font-semibold mb-[10px]">Наши проекты</p>
-                    <h2 class="text-[48px] leading-[56px] uppercase mb-[50px]">
-                        Коттеджный поселок
-                        <br>
-                        <span class="text-copper">в
-                            Алабино
-                        </span>
-                    </h2>
-                    <p class="text-whitegray mb-[10px] text-[18px] leading-[25px] font-normal">Алабино имеет отличную транспортную доступность. Дорога от Москвы по Киевскому шоссе займёт не более получаса. Вместе с соседними поселениями образуется комфортная агломерация, в которой есть всё необходимое для круглогодичного проживания: несколько школ и детских садов (в том числе частных), магазины, фитнес-центры и спортивные комплексы, поликлиники.</p>
-                    <p class="text-whitegray mb-[50px] text-[18px] leading-[25px] font-normal">Коттеджный посёлок по проекту центра недвижимости «REZHAR GROUP» - это комфортное пространство для жизни, удобное расположение, уют и красота природы!</p>
-                    <button class="border-[1px] text-white border-copper bg-transparent px-[66px] py-[16px] hover:bg-copper transition duration-300">Запись на просмотр</button>
-                </div>
+            class="bg-gradient-to-r from-[#00000000] via-[rgba(0, 0, 0, 0.48)] to-[rgba(0, 0, 0, 0.75)] flex justify-end py-[219px]">
+            <div class="max-w-[748px] mr-[300px] text-left text-white">
+                <p class="text-[15px] leading-[18px] font-semibold mb-[10px]">Наши проекты</p>
+                <h2 class="text-[48px] leading-[56px] uppercase mb-[50px]">
+                    Коттеджный поселок
+                    <br>
+                    <span class="text-copper">в
+                        Алабино
+                    </span>
+                </h2>
+                <p class="text-whitegray mb-[10px] text-[18px] leading-[25px] font-normal">Алабино имеет отличную транспортную доступность. Дорога от Москвы по Киевскому шоссе займёт не более получаса. Вместе с соседними поселениями образуется комфортная агломерация, в которой есть всё необходимое для круглогодичного проживания: несколько школ и детских садов (в том числе частных), магазины, фитнес-центры и спортивные комплексы, поликлиники.</p>
+                <p class="text-whitegray mb-[50px] text-[18px] leading-[25px] font-normal">Коттеджный посёлок по проекту центра недвижимости «REZHAR GROUP» - это комфортное пространство для жизни, удобное расположение, уют и красота природы!</p>
+                <button class="border-[1px] text-white border-copper bg-transparent px-[66px] py-[16px] hover:bg-copper transition duration-300">Запись на просмотр</button>
             </div>
         </div>
     </section>
@@ -353,7 +388,7 @@
         <div class="container py-[128px] flex">
             <div class="flex flex-col gap-[57px]">
                 <div >
-                    <h2 class="text-[34px] leading-[39px] mb-[144px] text-white"><span class="text-copper">Выбор коттеджа</span> в Алабино.</h2>
+                    <h2 class="text-[34px] leading-[39px] mb-[144px]"><span class="text-copper">Выбор коттеджа</span> в Алабино.</h2>
                     <p class="text-whitegray text-[18px] leading-[25px] font-normal">Мы стремились создать современный, практичный и функциональный дизайн интерьера вашего загородного дома. Ведь это не только о красоте и эстетике, но и о возможности наслаждаться каждым днём, не ограничивая себя ни в чем.</p>
                 </div>
                 <div class="flex flex-col gap-5">
@@ -361,75 +396,15 @@
                     <button class="border-[1px] text-white border-transparent bg-copper px-[66px] py-[16px] hover:bg-copper hover:border-copper transition duration-300">Подобрать подходящий участок</button>
                 </div>
             </div>
-            <!-- <div class="w-[746px]">
+            <div class="w-[746px]">
                 <div class="flex items-center justify-end gap-[20px]">
                     <img src="./assets/img/house-plan.svg" alt="house plan">
-                    <p class="text-whitegray text-[12px] leading-[15px font-normal] mb-[34px]">Изображения демонстрируют типовой проект (итоговый результат может отличаться от представленного)</p>
-                </div>
-                <div id="my-keen-slider" class="keen-slider">
-                    <div class="keen-slider__slide number-slide1">
-                        <img src="./assets/img/alabino-slider-2.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide2">
-                        <img src="./assets/img/alabino-slider-3.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide3">
-                        <img src="./assets/img/alabino-slider-2.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide4">
-                        <img src="./assets/img/alabino-slider-3.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide5">
-                        <img src="./assets/img/alabino-slider-2.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide6">
-                        <img src="./assets/img/alabino-slider-3.jpg" class="w-full h-auto rounded-lg shadow-lg" alt="slider img">
-                    </div>
-                  </div>
-            </div> -->
-        </div>
-    </section>
-    <section class="bg-contacts-form">
-        <div class="bg-black/90 w-full h-full py-[64px] ">
-            <div class="container text-center text-white">
-                <h2 class="text-[28px] leading-[32px] mb-[24px]">Нет подходящего проекта?
-                    <span class="text-copper">Уверены, нам будет что вам предложить</span>
-                </h2>
-                <p class="text-[18px] leading-[25px] mb-[48px] font-normal">
-                    Оставьте свой номер телефона и наш менеджер свяжется с Вами!<br>
-                    Мы подготовим предложение специально для Вас!
-                </p>
-                <form id="contacts-form" class="flex gap-[24px] justify-center">
-                    <input
-                        class="w-1/4 border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent"
-                        type="text" placeholder="Имя" name="first_name">
-                    <input
-                        class="w-1/4 border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent"
-                        type="text" placeholder="Фамилия" name="last_name">
-                    <button
-                        class="w-1/4 border-copper border-[1px] px-[113px] py-[16px] text-white text-[15px] leading-[18px] font-semibold hover:bg-copper transition duration-300"
-                        type="submit">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="bg-partner-background bg-center bg-no-repeat bg-cover">
-        <div
-            class="bg-partner-gradient-horizontal ">
-            <div class="bg-partner-gradient-vertical flex flex-col items-end pt-[84px]">
-                <div class="max-w-[748px] mr-[300px] text-left text-white">
-                    <p class="text-[15px] leading-[18px] font-semibold mb-[10px]">Ведущий партнер</p>
-                    <img class="mb-[50px]" src="./assets/img/saga-logo.svg" alt="logo saga">
-                    <p class="text-whitegray mb-[10px] text-[18px] leading-[25px] font-normal">Rezhar Group стремится активно развивать сеть партнеров. Одним из них стала отечественная компания SAGA Corpotation – крупный производитель высокотехнологичного оборудования. Корпорация присутствует на российском рынке более 15 лет..</p>
-                    <p class="text-whitegray mb-[50px] text-[18px] leading-[25px] font-normal">Специально по нашим техническим требованиям компания подготавливает качественное оборудование для видеонаблюдения и зарядные станции для автомобилей. Это отличное надежное решение, которым пользуются наши клиенты.</p>
-                    <button class="border-[1px] text-white border-copper bg-transparent px-[66px] py-[16px] hover:bg-copper transition duration-300 mb-[64px]">Стать партнером</button>
-                </div>
-                <div class="container flex flex-col gap-[10px]">
-                    <p class="text-[15px] leading-[18px] font-semibold text-white">Все партнеры</p>
+                    <p class="text-whitegray text-[12px] leading-[15px font-normal]">Изображения демонстрируют типовой проект (итоговый результат может отличаться от представленного)</p>
                 </div>
             </div>
         </div>
     </section>
+<<<<<<< HEAD
     <section class="bg-defaultBackground">
         <div class="container pt-[128px] pb-[64px] flex flex-col gap-10">
             <h2 class="text-[34px] leading-10 text-copper ">Отзывы наших клиентов</h2>
@@ -673,6 +648,9 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script> -->
     <!-- <script type="module" src="./js/slider.js"></script> -->
+=======
+>>>>>>> 8c7134f79310c6aa9b863a5b227145ac05db0907
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
