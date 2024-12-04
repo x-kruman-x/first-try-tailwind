@@ -43,6 +43,8 @@ function handleFormSubmit(form) {
 
 const form1 = document.querySelector('#service-form');
 const form2 = document.querySelector('#contacts-form');
+const form3 = document.querySelector('#client-data-form');
 
 handleFormSubmit(form1);
 handleFormSubmit(form2);
+handleFormSubmit(form3);

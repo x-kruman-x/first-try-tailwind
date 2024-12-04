@@ -341,7 +341,7 @@
                         Мы готовы помочь вам в сфере недвижимости!
                     </p>
                 </div>
-                <form id="submit-with-service" class="grid grid-cols-2 gap-[24px] w-1/2">
+                <form id="service-form" class="grid grid-cols-2 gap-[24px] w-1/2">
                     <input
                         class="border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent"
                         type="text" placeholder="Имя" name="first_name">
@@ -638,17 +638,31 @@
     </section>
     <section class="bg-submit-application">
         <div class="bg-black/80 w-full h-full py-[65px]">
-            <div class="container flex">
-                <div>
-                    <h2 class="text-[34px] leading-10">Свяжитесь с нами</h2>
+            <div class="container flex justify-between">
+                <div class="w-1/3">
+                    <h2 class="text-[34px] leading-10 mb-6">Свяжитесь с нами</h2>
                     <p class="text-[18px] leading-[25px] font-normal mb-[30px]">Мы готовы помочь по любому вопросу из сферы недвижимости</p>
                     <p class="text-[18px] leading-[25px] font-normal mb-[6px]">Контактный телефон:</p>
                     <a href="tel:+79853011313" class="text-[18px] leading-[25px] font-semibold text-white hover:text-copper hover:no-underline transition-allduration-300">+7 (985) 301-13-13</a>
                     <p class="mt-[30px]">Москва, Мичуринский проспект,<br>Олимпийская деревня, 1к1</p>
                 </div>
-                <form>
-                    
-                </form>
+                <form id="client-data-form">
+                    <div class="flex gap-4 mb-[15px]">
+                        <input
+                            class="w-1/3 border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent"
+                            type="text" placeholder="Имя" name="first_name">
+                        <input
+                            class="w-1/3 border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent"
+                            type="text" placeholder="Фамилия" name="last_name">
+                        <input
+                            class="w-1/3 border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent"
+                            type="text" placeholder="Email" name="email">
+                    </div>
+                    <textarea class="resize-none w-full h-[121px] mb-[25px] border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none focus:bg-transparent" name="message" placeholder="Ваше сообщение"></textarea>
+                    <div class="flex justify-end">
+                        <button class="border-copper border-[1px] px-[113px] py-[16px] text-white text-[15px] leading-[18px] font-semibold hover:bg-copper transition duration-300" type="submit">Отправить</button>
+                    </div>
+                </form> 
             </div>
         </div>
     </section>
