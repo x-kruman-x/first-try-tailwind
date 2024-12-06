@@ -17,6 +17,7 @@ function accordion() {
     });
 }
 
+
 function updateTriggerText(button) {
     const triggerInput = button.closest('.accordion-item').querySelector('#accordion-trigger-text');
     triggerInput.value = button.textContent;

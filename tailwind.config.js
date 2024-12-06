@@ -4,12 +4,12 @@ module.exports = {
   important: true,
   theme: {
     screens: {
-      "2xl": "1400px",
-      xl: "1200px",
-      lg: "992px",
-      md: "768px",
-      sm: "576px",
       xs: { max: "575px" },
+      sm: "576px",
+      md: "768px",
+      lg: '992px',
+      xl: "1200px",
+      "2xl": "1400px",
     },
     extend: {
       fontFamily: {
@@ -34,6 +34,7 @@ module.exports = {
           "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.64) 50%, rgba(0,0,0,1) 100%)",
         "partner-gradient-vertical":
           "linear-gradient(180deg, rgba(18,16,15,0) 0%, rgba(18,16,15,0.5) 100%)",
+        "zharkova": 'url("../assets/img/zharkova.png")',
       },
       colors: {
         copper: "rgba(183, 151, 110, 1)",
@@ -43,6 +44,7 @@ module.exports = {
       container: {
         center: true,
         screens: {
+          xs: "100%",
           sm: "540px",
           md: "720px",
           lg: "1024px",
@@ -52,6 +54,9 @@ module.exports = {
       },
       gridTemplateRows: {
         'accordion-items': 'repeat(4, minmax(0, auto))',
+      },
+      gridTemplateColumns: {
+        'accordion-container': 'repeat(2, minmax(0, auto))',
       }
     },
   },

@@ -13,9 +13,9 @@
 
 @layer components {
     .accordion-item.active > .accordion-content {
-        @apply flex;
+        @apply leading-3;
     }
-    .accordion-item.active > .accordion-img {
+    .accordion-item.active .accordion-img {
         @apply rotate-180;
     }
 }

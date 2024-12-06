@@ -31,12 +31,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.container {
+/* .container {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 26px;
-}
+} */
 
 .header-page {
   position: relative; /* Устанавливаем относительное позиционирование */
