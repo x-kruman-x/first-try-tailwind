@@ -74,7 +74,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-zharkova h-[847px] bg-no-repeat bg-center py-[128px] px-[300px]"></section>
+    <!-- <section class="bg-zharkova h-[847px] bg-no-repeat bg-center py-[128px] px-[300px]"></section> -->
     <section class="flex flex-wrap">
         <div
             class="w-full sm:w-1/2 xl:w-1/4 group relative overflow-hidden before:content-[''] before:absolute before:w-[2px] before:h-full before:z-10 before:ml-[10px] before:top-0 before:left-0 before:bg-white/20 before:pointer-events-none 2xl:before:ml-[20px] after:absolute after:top-0 after:right-0 after:content-[''] after:w-[2px] after:h-full after:mr-[10px] after:bg-white/20 after:pointer-events-none 2xl:after:mr-[20px]">
@@ -129,187 +129,215 @@
         </div>
     </section>
     <section class="bg-defaultBackground py-[64px]">
-        <div class="container flex flex-col px-3 sm:px-[30px]">
+        <div class="container flex flex-col px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px]">
             <h2 class="text-copper text-[20px] leading-[23px] mb-[30px] sm:text-[34px] sm:leading-[39px]">Перечень основных услуг<br><span
                     class="text-white">REZHAR GROUP</span></h2>
-            <div class="grid grid-cols-2 gap-y-[20px] gap-x-[48px]">
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Оформление прав на объекты недвижимого
-                            имущества
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5 sm:text-[15px] sm:leading-[18px]">
-                            Оформление прав на недвижимость включает в себя государственную регистрацию
-                            права в Росреестре и кадастровый учет. Это обеспечивает владельцам юридическую защиту и возможность
-                            свободно распоряжаться имуществом.
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+            <div class="grid gap-y-[20px] lg:grid-cols-accordion-container lg:gap-x-[48px]">
+                <div class="self-start">
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Оформление прав на объекты недвижимого
+                                имущества
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] font-semibold mb-5 sm:text-[15px] sm:leading-[18px]">
+                                Оформление прав на недвижимость включает в себя государственную регистрацию
+                                права в Росреестре и кадастровый учет. Это обеспечивает владельцам юридическую защиту и возможность
+                                свободно распоряжаться имуществом.
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
-                    <div class="w-full h-[1px] bg-white/10"></div>
-                </div>
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Согласование разрешительной документации при строительстве и реконструкции
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5">
-                            Согласование разрешительной документации при строительстве и реконструкции — это процесс, который обеспечивает легальность и безопасность строительных проектов. Он включает в себя разработку проектно-сметной документации, согласование с соответствующими органами и проверку соответствия нормативам.
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Согласование разрешительной документации при строительстве и реконструкции
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
+                                Согласование разрешительной документации при строительстве и реконструкции — это процесс, который обеспечивает легальность и безопасность строительных проектов. Он включает в себя разработку проектно-сметной документации, согласование с соответствующими органами и проверку соответствия нормативам.
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
-                    <div class="w-full h-[1px] bg-white/10"></div>
-                </div>
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Правовое сопровождение сделок с недвижимым имуществом
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5">
-                            Включает в себя составление договоров, экспертизу объекта сделки, техническое обследование и регистрацию.
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Правовое сопровождение сделок с недвижимым имуществом
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
+                                Включает в себя составление договоров, экспертизу объекта сделки, техническое обследование и регистрацию.
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
-                    <div class="w-full h-[1px] bg-white/10"></div>
-                </div>
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Риэлторские услуги по купле-продаже, аренде недвижимости
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5">
-                            Включают в себя поиск объектов, консультации, оформление сделок и поддержку клиентов на всех этапах.
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Риэлторские услуги по купле-продаже, аренде недвижимости
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
+                                Включают в себя поиск объектов, консультации, оформление сделок и поддержку клиентов на всех этапах.
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10  lg:hidden"></div>
                     </div>
-                    <div class="w-full h-[1px] bg-white/10"></div>
                 </div>
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5">
-                            Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                <div class="self-start">
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
+                                Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
-                    <div class="w-full h-[1px] bg-white/10"></div>
-                </div>
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Комплексное юридическое сопровождение деятельности обществ с ограниченной
-                            ответственностью
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5">
-                            Включает в себя консультации, подготовку документов, операционное сопровождение и защиту интересов компании.
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Комплексное юридическое сопровождение деятельности обществ с ограниченной
+                                ответственностью
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
+                                Включает в себя консультации, подготовку документов, операционное сопровождение и защиту интересов компании.
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
-                    <div class="w-full h-[1px] bg-white/10"></div>
-                </div>
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Сопровождение технологического присоединения коммуникаций
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5">
-                            Сопровождение технологического присоединения коммуникаций (газоснабжение,
-                            водоснабжение, электроснабжение и прочие) включает в себя подачу заявки, технические условия, монтажные работы и оформление документов
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Сопровождение технологического присоединения коммуникаций
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
+                                Сопровождение технологического присоединения коммуникаций (газоснабжение,
+                                водоснабжение, электроснабжение и прочие) включает в себя подачу заявки, технические условия, монтажные работы и оформление документов
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
-                    <!-- <div class="w-full h-[1px] bg-white/10"></div> -->
-                </div>
-                <div class="accordion-item w-full">
-                    <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5  pr-3">
-                        <span
-                            class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Консультационные услуги по земельному праву и оформлению прав на недвижимое имущество
-                        </span>
-                        <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                    </button>
-                    <div class="accordion-content flex-col mb-5 text-white hidden">
-                        <p class="text-[14px] leading-[17px] font-semibold mb-5">
-                            Включают в себя разработку документов, экспертизу объектов, поддержку клиентов и решение юридических вопросов.
-                        </p>
-                        <button class="w-full border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5  pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Консультационные услуги по земельному праву и оформлению прав на недвижимое имущество
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
+                                Включают в себя разработку документов, экспертизу объектов, поддержку клиентов и решение юридических вопросов.
+                            </p>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10 lg:hidden"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-submit-application">
-        <div class="bg-black/80 w-full h-full py-[65px]">
-            <div class="container flex justify-between gap-[84px] items-center">
-                <div class="text-left text-white">
-                    <h2 class="text-[28px] leading-[32px] mb-[24px]">Оставить заявку</h2>
-                    <p class="text-[18px] leading-[25px]">Не нашли ответ на свой вопрос?<br>
+    <section class="bg-submit-application bg-center bg-no-repeat bg-cover">
+        <div class="bg-black/70 w-full h-full py-[65px]">
+            <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] flex flex-col md:flex-row justify-between gap-[24px] items-center">
+                <div class="text-white w-full">
+                    <h2 class="text-[20px] leading-[23px] mb-[25px] sm:text-[28px] sm:leading-[32px]">Оставить заявку</h2>
+                    <p class="text-[16px] leading-[20px] sm:text-[18px] sm:leading-[25px]">Не нашли ответ на свой вопрос?<br>
                         Оставьте заявку — наш специалист свяжется с вами.<br>
                         Мы готовы помочь вам в сфере недвижимости!
                     </p>
                 </div>
-                <form id="service-form" class="grid grid-cols-2 gap-[24px] w-1/2">
-                    <input
-                        class="border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none"
-                        type="text" placeholder="Имя" name="first_name">
-                    <input
-                        class="border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none"
-                        type="text" placeholder="Фамилия" name="last_name">
-                    <div class="w-full relative accordion-item">
-                        <button class="accordion-trigger flex w-full items-center justify-between border-[1px] text-white border-copper bg-[#12100F] pl-[24px] pr-[18px] py-[18px]" type="button">
-                            <input class="text-[12px] leading-[15px] font-normal bg-transparent text-white w-full cursor-pointer focus:outline-none" readonly id="accordion-trigger-text" placeholder="Выбор услуги" name="service"/>
-                            <svg class="accordion-img" width="14" height="15" viewBox="0 0 14 15" fill="#B7976E" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.3484 3.74834L7 9.09678L1.65156 3.74834L6.11959e-07 5.3999L7 12.3999L14 5.3999L12.3484 3.74834Z" fill="#C5C6C7"/>
-                            </svg>
-                        </button>
-                        <div class="accordion-content bg-defaultBackground pl-[24px] py-[18px] absolute flex flex-col gap-3 w-full hidden">
-                            <button class="text-[12px] leading-[15px] font-normal text-white text-left" type="button" onclick="updateTriggerText(this)">Подбор загородного дома</button>
-                            <button class="text-[12px] leading-[15px] font-normal text-white text-left" type="button" onclick="updateTriggerText(this)">Продажа недвижимости</button>
-                            <button class="text-[12px] leading-[15px] font-normal text-white text-left" type="button" onclick="updateTriggerText(this)">Аренда недвижимости</button>
+                <form id="service-form" class="grid gap-y-[24px] sm:grid-rows-2">
+                    <div class="flex flex-col gap-[25px] sm:flex-row md:flex-wrap">
+                        <input
+                            class="w-full sm:w-1/3 md:w-1/2 border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none"
+                            type="text" placeholder="Имя" name="first_name">
+                        <input
+                            class="w-full sm:w-1/3 md:w-1/2 border-[1px] text-white border-[#C5C6C7] px-[24px] py-[18px] text-[12px] leading-[15px] font-normal bg-[#12100F] hover:border-copper focus-visible:border-copper focus:outline-none"
+                            type="text" placeholder="Фамилия" name="last_name">
+                        <div class="w-full sm:w-1/3 md:w-1/2 relative accordion-item">
+                            <button
+                                class="accordion-trigger flex w-full items-center justify-between border-[1px] text-white border-copper bg-[#12100F] pl-[24px] pr-[18px] py-[18px]"
+                                type="button">
+                                <input
+                                    class="text-[12px] leading-[15px] font-normal bg-transparent text-white w-full cursor-pointer focus:outline-none"
+                                    readonly id="accordion-trigger-text" placeholder="Выбор услуги" name="service" />
+                                <svg class="accordion-img transition-all duration-500" width="14" height="15" viewBox="0 0 14 15" fill="#B7976E"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.3484 3.74834L7 9.09678L1.65156 3.74834L6.11959e-07 5.3999L7 12.3999L14 5.3999L12.3484 3.74834Z"
+                                        fill="#C5C6C7" />
+                                </svg>
+                            </button>
+                            <div
+                                class="accordion-content bg-defaultBackground pl-[24px] py-[18px] absolute flex-col gap-3 w-full hidden">
+                                <button class="text-[12px] leading-[15px] font-normal text-white text-left" type="button"
+                                    onclick="updateTriggerText(this)">Подбор загородного дома</button>
+                                <button class="text-[12px] leading-[15px] font-normal text-white text-left" type="button"
+                                    onclick="updateTriggerText(this)">Подбор городской недвижимости</button>
+                                <button class="text-[12px] leading-[15px] font-normal text-white text-left" type="button"
+                                    onclick="updateTriggerText(this)">Подбор готового дома</button>
+                            </div>
                         </div>
                     </div>
-                    <button class="border-copper border-[1px] px-[113px] py-[16px] text-white text-[15px] leading-[18px] font-semibold hover:bg-copper transition duration-300" type="submit">Отправить</button>
+                    <button class="border-copper w-full md:w-1/2 border-[1px] px-[113px] py-[16px] text-white text-[15px] leading-[18px] font-semibold hover:bg-copper transition duration-300" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
     </section>
     <section class="bg-parallax-background bg-fixed bg-cover bg-center">
-        <div
-            class="bg-gradient-to-r from-[#00000000] via-[rgba(0, 0, 0, 0.48)] to-[rgba(0, 0, 0, 0.75)] flex justify-end py-[219px] ">
-            <div class="max-w-[748px] mr-[300px] text-left text-white">
-                <p class="text-[15px] leading-[18px] font-semibold mb-[10px]">Наши проекты</p>
-                <h2 class="text-[48px] leading-[56px] uppercase mb-[50px]">
-                    Коттеджный поселок
-                    <br>
-                    <span class="text-copper">в
-                        Алабино
-                    </span>
-                </h2>
-                <p class="text-whitegray mb-[10px] text-[18px] leading-[25px] font-normal">Алабино имеет отличную транспортную доступность. Дорога от Москвы по Киевскому шоссе займёт не более получаса. Вместе с соседними поселениями образуется комфортная агломерация, в которой есть всё необходимое для круглогодичного проживания: несколько школ и детских садов (в том числе частных), магазины, фитнес-центры и спортивные комплексы, поликлиники.</p>
-                <p class="text-whitegray mb-[50px] text-[18px] leading-[25px] font-normal">Коттеджный посёлок по проекту центра недвижимости «REZHAR GROUP» - это комфортное пространство для жизни, удобное расположение, уют и красота природы!</p>
-                <button class="border-[1px] text-white border-copper bg-transparent px-[66px] py-[16px] hover:bg-copper transition duration-300">Запись на просмотр</button>
+        <div class="bg-alabino-gradient-vertical">
+            <div
+                class="bg-black/50 container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] py-[36px] sm:py-[53.5px] flex flex-col justify-start">
+                <div class="w-full text-left text-white">
+                    <p class="text-[14px] sm:text-[15px] leading-[18px] font-semibold mb-[10px]">Наши проекты</p>
+                    <h2 class="text-[24px] leading-[28px] sm:text-[48px] sm:leading-[56px] uppercase mb-[30px]">
+                        Коттеджный поселок
+                        <br>
+                        <span class="text-copper">в
+                            Алабино
+                        </span>
+                    </h2>
+                    <p class="text-whitegray mb-[10px] text-[14px] leading-[18px] sm:text-[18px] sm:leading-[25px] font-normal">Алабино имеет отличную
+                        транспортную доступность. Дорога от Москвы по Киевскому шоссе займёт не более получаса. Вместе с
+                        соседними поселениями образуется комфортная агломерация, в которой есть всё необходимое для
+                        круглогодичного проживания: несколько школ и детских садов (в том числе частных), магазины,
+                        фитнес-центры и спортивные комплексы, поликлиники.</p>
+                    <p class="text-whitegray mb-[30px] text-[14px] sm:text-[18px] sm:leading-[25px] leading-[18px] font-normal">Коттеджный посёлок по проекту
+                        центра недвижимости «REZHAR GROUP» - это комфортное пространство для жизни, удобное расположение,
+                        уют и красота природы!</p>
+                    <button
+                        class="w-full sm:w-2/3 border-[2px] text-white text-[15px] leading-[18px] border-copper bg-transparent px-[66px] py-[16px] hover:bg-copper transition duration-300">Запись
+                        на просмотр</button>
+                </div>
             </div>
         </div>
     </section>
@@ -333,7 +361,7 @@
             </div>
         </div>
     </section> -->
-    <section class="bg-contacts-form">
+    <!-- <section class="bg-contacts-form">
         <div class="bg-black/90 w-full h-full py-[64px] ">
             <div class="container text-center text-white">
                 <h2 class="text-[28px] leading-[32px] mb-[24px]">Нет подходящего проекта?
@@ -356,8 +384,8 @@
                 </form>
             </div>
         </div>
-    </section>
-    <section class="bg-partner-background bg-center bg-no-repeat bg-cover">
+    </section> -->
+    <!-- <section class="bg-partner-background bg-center bg-no-repeat bg-cover">
         <div
             class="bg-partner-gradient-horizontal ">
             <div class="bg-partner-gradient-vertical flex flex-col items-end pt-[84px]">
@@ -369,12 +397,12 @@
                     <button class="border-[1px] text-white border-copper bg-transparent px-[66px] py-[16px] hover:bg-copper transition duration-300 mb-[64px]">Стать партнером</button>
                 </div>
                 <div class="container flex flex-col gap-[10px]">
-                    <!-- <p class="text-[15px] leading-[18px] font-semibold text-white">Все партнеры</p> -->
+                    <p class="text-[15px] leading-[18px] font-semibold text-white">Все партнеры</p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="bg-defaultBackground">
+    </section> -->
+    <!-- <section class="bg-defaultBackground">
         <div class="container pt-[128px] pb-[64px] flex flex-col gap-10">
             <h2 class="text-[34px] leading-10 text-copper ">Отзывы наших клиентов</h2>
             <div class="flex gap-3 h-auto">
@@ -397,8 +425,8 @@
                 <button class="text-white border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper transition-all duration-300">Оставить отзыв</button>
             </div>
         </div>
-    </section>
-    <section class="bg-defaultBackground">
+    </section> -->
+    <!-- <section class="bg-defaultBackground">
         <div class="container pb-[128px] pt-[64px] flex flex-col gap-[30px]">
             <h2 class="text-[34px] leading-[39px] text-copper">Часто задаваемые вопросы</h2>
             <div class="grid grid-cols-accordion-container w-full gap-x-[48px]">
@@ -479,7 +507,7 @@
                             </p>
                             <button class="w-1/2 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
                         </div>
-                        <!-- <div class="w-full h-[1px] bg-white/10"></div> -->
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
                     
                 </div>
@@ -559,13 +587,13 @@
                             </p>
                             <button class="w-1/2 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
                         </div>
-                        <!-- <div class="w-full h-[1px] bg-white/10"></div> -->
+                        <div class="w-full h-[1px] bg-white/10"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="bg-submit-application">
+    </section> -->
+    <!-- <section class="bg-submit-application">
         <div class="bg-black/80 w-full h-full py-[65px]">
             <div class="container flex justify-between">
                 <div class="w-1/3">
@@ -599,7 +627,7 @@
                 </form> 
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script> -->
     <!-- <script type="module" src="./js/slider.js"></script> -->

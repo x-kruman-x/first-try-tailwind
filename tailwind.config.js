@@ -35,6 +35,7 @@ module.exports = {
         "partner-gradient-vertical":
           "linear-gradient(180deg, rgba(18,16,15,0) 0%, rgba(18,16,15,0.5) 100%)",
         "zharkova": 'url("../assets/img/zharkova.png")',
+        
       },
       colors: {
         copper: "rgba(183, 151, 110, 1)",
@@ -45,10 +46,10 @@ module.exports = {
         center: true,
         screens: {
           xs: "100%",
-          sm: "540px",
-          md: "720px",
-          lg: "1024px",
-          xl: "1140px",
+          sm: "100%",
+          md: "100%",
+          lg: "100%",
+          xl: "100%",
           "2xl": "1320px",
         },
       },
