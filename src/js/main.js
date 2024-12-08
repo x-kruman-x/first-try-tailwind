@@ -49,3 +49,7 @@ const form3 = document.querySelector('#client-data-form');
 handleFormSubmit(form1);
 handleFormSubmit(form2);
 handleFormSubmit(form3);
+
+document.querySelector('#burger-menu').addEventListener('click', () => {
+    document.querySelector('#burger-menu').classList.toggle('hidden');
+})

@@ -1,5 +1,5 @@
-import './keen-slider/keen-slider.min.css'
-import KeenSlider from './keen-slider'
+import '../../node_modules/keen-slider/keen-slider.min.css'
+import KeenSlider from '../../node_modules/keen-slider/'
 
 function navigation(slider) {
     let wrapper, dots, arrowLeft, arrowRight
@@ -13,6 +13,7 @@ function navigation(slider) {
     function removeElement(elment) {
       elment.parentNode.removeChild(elment)
     }
+
     function createDiv(className) {
       var div = document.createElement("div")
       var classNames = className.split(" ")

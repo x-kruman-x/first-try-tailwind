@@ -15,9 +15,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"
+      /> -->
 </head>
 
-<body>
+<body class="relative">
+    <header class="bg-[#12100F80] sticky top-0 z-50">
+        <nav class="mx-auto flex items-center justify-between px-[26px] py-[18px] lg:px-8" aria-label="Global">
+            <div class="flex">
+                <a href="#">
+                    <img class="w-[120px] h-[36px] xl:w-[174px] xl:h-[55px]" src="./assets/img/Logo.png"
+                        alt="logo">
+                </a>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-[30px] xl:gap-x-[36px] 2xl:gap-x-[48px]">
+                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">О нас</a>
+                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Услуги</a>
+                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Проекты</a>
+                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Отзывы</a>
+                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Рекомендации</a>
+                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Контакты</a>
+            </div>
+            <div class="flex items-center gap-[60px]">
+                <button class="py-[9px] px-[36px] 2xl:px-[66px] text-[15px] leading-[18px] border-2 border-copper font-semibold hover:bg-copper">Оставить заявку</button>
+                <div class="flex lg:hidden text-white">
+                    <button id="burger-btn" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="size-6" fill="#B7976E" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" id="burger-menu" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-10"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-defaultBackground p-10">
+                <div class="flex justify-end">
+                    <button type="button">
+                        <img src="./assets/img/close-btn.svg" alt="close btn">
+                    </button>
+                </div>
+                <div class="border-b-2 border-copper w-full">
+                    <div class="">
+                        <div class="flex flex-col items-center gap-30">
+                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">О нас</a>
+                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Услуги</a>
+                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Проекты</a>
+                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Отзывы</a>
+                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Рекомендации</a>
+                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="header-page" id="header-page">
         <div class="video">
             <div class="video-background">
@@ -380,11 +439,12 @@
             </div>
         </div>
     </section>
-    <!-- <section class="bg-defaultBackground">
-        <div class="container py-[128px] flex bg-alabino-gradient-horizontal">
+    <section class="bg-defaultBackground">
+        <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] py-[64px] flex flex-col-reverse gap-6 bg-alabino-gradient-horizontal">
             <div class="flex flex-col gap-[57px]">
-                <div >
-                    <h2 class="text-[34px] leading-[39px] mb-[144px]"><span class="text-copper">Выбор коттеджа</span> в Алабино.</h2>
+                <div class="flex flex-col ">
+                    <h2 class="text-[34px] leading-[39px]"><span class="text-copper">Выбор коттеджа</span> в Алабино.</h2>
+                    <p class="text-[18px] leading-[25px] font-normal">Будущие жители поселка могут выбрать подходящий для их семьи проект дома с удобным расположением, специально разработанным одним из ведущих российских архитектурных бюро для «Rezhar Group».</p>
                     <p class="text-whitegray text-[18px] leading-[25px] font-normal">Мы стремились создать современный, практичный и функциональный дизайн интерьера вашего загородного дома. Ведь это не только о красоте и эстетике, но и о возможности наслаждаться каждым днём, не ограничивая себя ни в чем.</p>
                 </div>
                 <div class="flex flex-col gap-5">
@@ -392,14 +452,34 @@
                     <button class="border-[1px] text-white border-transparent bg-copper px-[66px] py-[16px] hover:bg-copper hover:border-copper transition duration-300">Подобрать подходящий участок</button>
                 </div>
             </div>
-            <div class="w-[746px]">
-                <div class="flex items-center justify-end gap-[20px]">
+            <div class="flex flex-col gap-[10px]">
+                <div class="flex flex-col items-center justify-end gap-[20px]">
                     <img src="./assets/img/house-plan.svg" alt="house plan">
-                    <p class="text-whitegray text-[12px] leading-[15px font-normal]">Изображения демонстрируют типовой проект (итоговый результат может отличаться от представленного)</p>
+                    <p class="w-full text-whitegray text-[10px] leading-[12px] font-normal">Изображения демонстрируют типовой проект (итоговый результат может отличаться от представленного)</p>
+                </div>
+                <div id="my-keen-slider" class="keen-slider">
+                    <div class="keen-slider__slide number-slide1">
+                        <img src="./assets/img//alabino-slider-2.jpg" alt="slider img">
+                    </div>
+                    <div class="keen-slider__slide number-slide2">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="slider img">
+                    </div>
+                    <div class="keen-slider__slide number-slide3">
+                        <img src="./assets/img//alabino-slider-2.jpg" alt="slider img">
+                    </div>
+                    <div class="keen-slider__slide number-slide4">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="slider img">
+                    </div>
+                    <div class="keen-slider__slide number-slide5">
+                        <img src="./assets/img//alabino-slider-2.jpg" alt="slider img">
+                    </div>
+                    <div class="keen-slider__slide number-slide6">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="slider img">
+                    </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <section class="bg-contacts-form">
         <div class="bg-black/90 w-full h-full py-[64px] ">
             <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] text-center text-white">
@@ -488,18 +568,42 @@
     <section class="bg-defaultBackground">
         <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] pb-[64px] pt-[32px] flex flex-col gap-[30px]">
             <h2 class="text-[34px] leading-[39px] text-copper">Часто задаваемые вопросы</h2>
-            <div class="grid lg:grid-cols-accordion-container lg:gap-x-[48px]">
+            <div class="grid lg:grid-cols-2 lg:gap-x-[48px]">
                 <div class="self-start grid gap-y-5 mb-5 lg:mb-0">
                     <div class="accordion-item w-full">
                         <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
                             <span
-                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Какого типа существует недвижимое имущество?
+                            </span>
+                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
+                        </button>
+                        <div class="accordion-content flex-col mb-5 text-white hidden">
+                            <div class="mb-5">
+                                <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold">В России недвижимое имущество регламентируется Гражданским кодексом (ГК РФ), и оно может быть разнообразным. Вот основные виды недвижимого имущества:</p>
+                                <ol class="list-decimal list-inside text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb">
+                                    <li class="pl-[15px]">Земельные участки и участки недр.</li>
+                                    <li class="pl-[15px]">Здания и сооружения.</li>
+                                    <li class="pl-[15px]"> Объекты незавершенного строительства.</li>
+                                    <li class="pl-[15px]">Жилые и нежилые помещения.</li>
+                                    <li class="pl-[15px]">Машино-места.</li>
+                                    <li class="pl-[15px]">Воздушные и морские суда, суда внутреннего плавания.</li>
+                                    <li class="pl-[15px]">Памятники истории и архитектуры.</li>
+                                </ol>
+                            </div>
+                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10"></div>
+                    </div>
+                    <div class="accordion-item w-full">
+                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
+                            <span
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Поселок на вашем сайте является вашей разработкой или вы выступаете посредником?
                             </span>
                             <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
                         </button>
                         <div class="accordion-content flex-col mb-5 text-white hidden">
                             <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
-                                Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
+                                Поселок в Алабино - это наша собственная разработка, созданная с любовью к природе и комфорту.
                             </p>
                             <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
                         </div>
@@ -508,29 +612,23 @@
                     <div class="accordion-item w-full">
                         <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
                             <span
-                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Какие существуют типы земельных участков?
                             </span>
                             <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
                         </button>
                         <div class="accordion-content flex-col mb-5 text-white hidden">
-                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
-                                Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
-                            </p>
-                            <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
-                        </div>
-                        <div class="w-full h-[1px] bg-white/10"></div>
-                    </div>
-                    <div class="accordion-item w-full">
-                        <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
-                            <span
-                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
-                            </span>
-                            <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
-                        </button>
-                        <div class="accordion-content flex-col mb-5 text-white hidden">
-                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
-                                Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
-                            </p>
+                            <div class="mb-5">
+                                <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold">В России существует несколько типов земельных участков, каждый из которых имеет свои особенности. Рассмотрим их:</p>
+                                <ol class="list-decimal list-inside text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb">
+                                    <li class="pl-[15px]">Сельскохозяйственные участки.</li>
+                                    <li class="pl-[15px]">Участки населенных пунктов.</li>
+                                    <li class="pl-[15px]">Промышленные участки.</li>
+                                    <li class="pl-[15px]">Особо охраняемые территории.</li>
+                                    <li class="pl-[15px]">Лесные участки.</li>
+                                    <li class="pl-[15px]">Водные участки.</li>
+                                    <li class="pl-[15px]">Запасные участки.</li>
+                                </ol>
+                            </div>
                             <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
                         </div>
                         <div class="w-full h-[1px] bg-white/10 lg:hidden"></div>
@@ -540,14 +638,35 @@
                     <div class="accordion-item w-full">
                         <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
                             <span
-                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Какие ограничения в ЕГРН могут быть наложены на квартиру?
                             </span>
                             <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
                         </button>
                         <div class="accordion-content flex-col mb-5 text-white hidden">
-                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
-                                Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
-                            </p>
+                            <div class="mb-5">
+                                <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold">При покупке квартиры важно удостовериться, что она не имеет никаких ограничений или обременений. Разберемся, какие ограничения могут быть наложены на квартиру и какие выписки из ЕГРН помогут вам в этом.</p>
+                                <ol class="list-decimal list-inside text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb">
+                                    <li class="pl-[15px]">Общая выписка из ЕГРН:
+                                        <ul class="list-disc list-inside">
+                                            <li class="pl-[15px]">Это универсальный документ, который содержит информацию об основных характеристиках квартиры и зарегистрированных правах на нее.</li>
+                                            <li class="pl-[15px]">В общей выписке можно узнать, есть ли арест на квартиру, наложенные ограничения или залог.</li>
+                                            <li class="pl-[15px]">Также она покажет точные характеристики объекта (площадь, адрес, кадастровую стоимость), которые можно сверить с данными в объявлении о продаже и правоустанавливающих документах.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="pl-[15px]">Выписка из ЕГРН о переходе прав:
+                                        <ul class="list-disc list-inside">
+                                            <li class="pl-[15px]">В этой выписке содержится информация о всех сделках с квартирой после 1998 года.</li>
+                                            <li class="pl-[15px]">Если вам нужна более ранняя информация, можно обратиться в орган местного самоуправления или Бюро технической инвентаризации (БТИ)..</li>
+                                        </ul>
+                                    </li>
+                                    <li class="pl-[15px]">Выписка из ЕГРН о содержании правоустанавливающих документов:
+                                        <ul class="list-disc list-inside">
+                                            <li class="pl-[15px]">В ней указаны документы, на основании которых собственник получил квартиру.</li>
+                                            <li class="pl-[15px]">Обратите внимание, что эта выписка относится к сведениям ограниченного доступа и доступна только собственнику</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
                             <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
                         </div>
                         <div class="w-full h-[1px] bg-white/10"></div>
@@ -555,14 +674,22 @@
                     <div class="accordion-item w-full">
                         <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
                             <span
-                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Каковы существуют категории зданий по назначению?
                             </span>
                             <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
                         </button>
                         <div class="accordion-content flex-col mb-5 text-white hidden">
-                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
-                                Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
-                            </p>
+                            <div class="mb-5">
+                                <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold">В мире строительства существует множество категорий зданий, каждая из которых имеет свою специфику и предназначение. Рассмотрим некоторые из них:</p>
+                                <ol class="list-decimal list-inside text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb">
+                                    <li class="pl-[15px]">Жилые здания.</li>
+                                    <li class="pl-[15px]">Административные здания.</li>
+                                    <li class="pl-[15px]">Промышленные здания.</li>
+                                    <li class="pl-[15px]">Технические здания.</li>
+                                    <li class="pl-[15px]">Сельскохозяйственные здания.</li>
+                                    <li class="pl-[15px]">Общественные здания.</li>
+                                </ol>
+                            </div>
                             <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
                         </div>
                         <div class="w-full h-[1px] bg-white/10"></div>
@@ -570,14 +697,41 @@
                     <div class="accordion-item w-full">
                         <button class="accordion-trigger flex w-full items-center justify-between gap-[30px] mb-5 pr-3">
                             <span
-                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Ведение земельно-правовых судебных споров
+                                class="text-white text-[16px] leading-[20px] sm:text-[20px] sm:leading-[25px] font-normal text-left">Какую информацию о квартире можно получить в ЕГРН?
                             </span>
                             <img class="accordion-img transition-all duration-500" src="./assets/img/accordion-btn.svg" alt="accordion btn">
                         </button>
                         <div class="accordion-content flex-col mb-5 text-white hidden">
-                            <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb-5">
-                                Юридическая помощь в разрешении конфликтов, связанных с правами на земельные участки. Адвокаты представляют интересы клиента в суде, составляют исковые заявления и доказывают его права.
-                            </p>
+                            <div class="mb-5">
+                                <p class="text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold">В Едином государственном реестре недвижимости (ЕГРН) можно получить разнообразную информацию о квартире. Разберемся, что именно можно узнать:</p>
+                                <ol class="list-decimal list-inside text-[14px] leading-[17px] sm:text-[15px] sm:leading-[18px] font-semibold mb">
+                                    <li class="pl-[15px]">Выписка из ЕГРН о квартире:
+                                        <ul class="list-disc list-inside">
+                                            <li class="pl-[15px]">Это официальный документ, подтверждающий права на недвижимость.</li>
+                                            <li class="pl-[15px]">В выписке указаны следующие сведения:
+                                                <ul class="list-disc list-inside">
+                                                    <li class="pl-[15px]">Характеристики объекта: Площадь, адрес, этаж и другие технические детали.</li>
+                                                    <li class="pl-[15px]">Сведения о правообладателях: Имена собственников и их доли в праве.</li>
+                                                    <li class="pl-[15px]">Ограничения и обременения: Например, аресты, залоги или ограничения в распоряжении.</li>
+                                                    <li class="pl-[15px]">Кадастровая стоимость: Оценка стоимости объекта для налоговых целей.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pl-[15px]">Справочная информация по объектам недвижимости в режиме online:
+                                        <ul class="list-disc list-inside">
+                                            <li class="pl-[15px]">На сайте Росреестра можно получить информацию о квартире без заказа выписки из ЕГРН.</li>
+                                            <li class="pl-[15px]">Этот сервис позволяет узнать актуальные данные о недвижимости, включая ее характеристики и правообладателей.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="pl-[15px]">Выписка из ЕГРН о кадастровой стоимости:
+                                        <ul class="list-disc list-inside">
+                                            <li class="pl-[15px]">Этот документ помогает проверить, правильно ли начисляются налоги на имущество или землю.</li>
+                                            <li class="pl-[15px]">В выписке указывается актуальная кадастровая стоимость объекта.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
                             <button class="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 border-2 border-copper py-[16px] px-[66px] text-[15px] leading-[18px] font-semibold hover:bg-copper ">Подробнее об услуге</button>
                         </div>
                         <div class="w-full h-[1px] bg-white/10 lg:hidden"></div>
@@ -625,10 +779,106 @@
             </div>
         </div>
     </section>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script> -->
-    <!-- <script type="module" src="./js/slider.js"></script> -->
     <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script type="module" src="./js/slider.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+    <!-- <script>
+        function navigation(slider) {
+            let wrapper, dots, arrowLeft, arrowRight
+
+            function markup(remove) {
+                wrapperMarkup(remove)
+                dotMarkup(remove)
+                arrowMarkup(remove)
+            }
+
+            function removeElement(elment) {
+                elment.parentNode.removeChild(elment)
+            }
+
+            function createDiv(className) {
+                var div = document.createElement("div")
+                var classNames = className.split(" ")
+                classNames.forEach((name) => div.classList.add(name))
+                return div
+            }
+
+            function arrowMarkup(remove) {
+                if (remove) {
+                    removeElement(arrowLeft)
+                    removeElement(arrowRight)
+                    return
+                }
+                arrowLeft = createDiv("arrow arrow--left")
+                arrowLeft.addEventListener("click", () => slider.prev())
+                arrowRight = createDiv("arrow arrow--right")
+                arrowRight.addEventListener("click", () => slider.next())
+
+                wrapper.appendChild(arrowLeft)
+                wrapper.appendChild(arrowRight)
+            }
+
+            function wrapperMarkup(remove) {
+                if (remove) {
+                    var parent = wrapper.parentNode
+                    while (wrapper.firstChild)
+                        parent.insertBefore(wrapper.firstChild, wrapper)
+                    removeElement(wrapper)
+                    return
+                }
+                wrapper = createDiv("navigation-wrapper")
+                slider.container.parentNode.appendChild(wrapper)
+                wrapper.appendChild(slider.container)
+            }
+
+            function dotMarkup(remove) {
+                if (remove) {
+                    removeElement(dots)
+                    return
+                }
+                dots = createDiv("dots")
+                slider.track.details.slides.forEach((_e, idx) => {
+                    var dot = createDiv("dot")
+                    dot.addEventListener("click", () => slider.moveToIdx(idx))
+                    dots.appendChild(dot)
+                })
+                wrapper.appendChild(dots)
+            }
+
+            function updateClasses() {
+                var slide = slider.track.details.rel
+                slide === 0
+                    ? arrowLeft.classList.add("arrow--disabled")
+                    : arrowLeft.classList.remove("arrow--disabled")
+                slide === slider.track.details.slides.length - 1
+                    ? arrowRight.classList.add("arrow--disabled")
+                    : arrowRight.classList.remove("arrow--disabled")
+                Array.from(dots.children).forEach(function (dot, idx) {
+                    idx === slide
+                        ? dot.classList.add("dot--active")
+                        : dot.classList.remove("dot--active")
+                })
+            }
+
+            slider.on("created", () => {
+                markup()
+                updateClasses()
+            })
+            slider.on("optionsChanged", () => {
+                console.log(2)
+                markup(true)
+                markup()
+                updateClasses()
+            })
+            slider.on("slideChanged", () => {
+                updateClasses()
+            })
+            slider.on("destroyed", () => {
+                markup(true)
+            })
+        }
+
+        var slider = new KeenSlider("#my-keen-slider", {}, [navigation])
+    </script> -->
 </body>
 </html>

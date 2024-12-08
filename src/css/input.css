@@ -36,4 +36,7 @@
     .politics__li {
         @apply text-[14px] leading-[18px] list-disc list-inside sm:text-[18px] sm:leading-[25px];
     }
+    .politics__link {
+        @apply text-[14px] leading-[18px] text-whitegray underline sm:text-[18px] sm:leading-[25px];
+    }
 }
