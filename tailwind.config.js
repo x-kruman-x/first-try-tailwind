@@ -33,8 +33,7 @@ module.exports = {
         "partner-gradient-horizontal":
           "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.64) 50%, rgba(0,0,0,1) 100%)",
         "partner-gradient-vertical":
-          "linear-gradient(180deg, rgba(18,16,15,0) 0%, rgba(18,16,15,0.5) 100%)",
-        "zharkova": 'url("../assets/img/zharkova.png")',
+          "linear-gradient(180deg, rgba(18,16,15,0) 0%, rgba(18,16,15,1) 100%)",
         
       },
       colors: {
@@ -50,11 +49,11 @@ module.exports = {
           md: "100%",
           lg: "100%",
           xl: "100%",
-          "2xl": "1320px",
+          "2xl": "1546px",
         },
       },
       gridTemplateRows: {
-        'accordion-items': 'repeat(4, minmax(0, auto))',
+        'form-items': 'repeat(4, minmax(0, auto))',
       },
       gridTemplateColumns: {
         'accordion-container': 'repeat(2, minmax(0, auto))',
