@@ -22,7 +22,7 @@
 </head>
 
 <body class="relative">
-    <header class="bg-[#12100F80] sticky top-0 z-50">
+    <header class="bg-[#12100F80] fixed w-full top-0 z-50">
         <nav class="mx-auto flex items-center justify-between px-[26px] py-[18px] lg:px-8" aria-label="Global">
             <div class="flex">
                 <a href="#">
@@ -457,7 +457,31 @@
                     <img src="./assets/img/house-plan.svg" alt="house plan">
                     <p class="w-full text-whitegray text-[10px] leading-[12px] font-normal">Изображения демонстрируют типовой проект (итоговый результат может отличаться от представленного)</p>
                 </div>
-                <div id="my-keen-slider" class="keen-slider">
+                <div class="slider-container">
+                    <div class="slider">
+                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 1">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 2">
+                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 3">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 4">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 5">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 6">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 7">
+                    </div>
+                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
+                    
+                    <div class="thumbnails">
+                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 1" class="thumbnail">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 2" class="thumbnail">
+                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 3" class="thumbnail">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 4" class="thumbnail">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 5" class="thumbnail">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 6" class="thumbnail">
+                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 7" class="thumbnail">
+                    </div>
+                </div>
+
+                <!-- <div id="my-keen-slider" class="keen-slider">
                     <div class="keen-slider__slide number-slide1">
                         <img src="./assets/img//alabino-slider-2.jpg" alt="slider img">
                     </div>
@@ -476,7 +500,7 @@
                     <div class="keen-slider__slide number-slide6">
                         <img src="./assets/img//alabino-slider-3.jpg" alt="slider img">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -779,6 +803,7 @@
             </div>
         </div>
     </section>
+    
     <script src="./js/main.js"></script>
     <!-- <script type="module" src="./js/slider.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>

@@ -53,3 +53,51 @@ handleFormSubmit(form3);
 document.querySelector('#burger-menu').addEventListener('click', () => {
     document.querySelector('#burger-menu').classList.toggle('hidden');
 })
+
+const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = Array.from(slider.querySelectorAll('img'));
+const thumbnails = Array.from(document.querySelectorAll('.thumbnail'));
+const slideCount = slides.length;
+let slideIndex = 0;
+
+// Устанавливаем обработчики событий для кнопок
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => showSlide(index));
+});
+
+// Функция для показа предыдущего слайда
+function showPreviousSlide() {
+    slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+    updateSlider();
+}
+
+// Функция для показа следующего слайда
+function showNextSlide() {
+    slideIndex = (slideIndex + 1) % slideCount;
+    updateSlider();
+}
+
+// Функция для показа конкретного слайда по индексу
+function showSlide(index) {
+    slideIndex = index;
+    updateSlider();
+}
+
+// Функция для обновления отображения слайдера
+function updateSlider() {
+    slides.forEach((slide, index) => {
+        slide.style.display = index === slideIndex ? 'block' : 'none';
+    });
+    
+    // Обновление миниатюр
+    thumbnails.forEach((thumbnail, index) => {
+        thumbnail.classList.toggle('active', index === slideIndex);
+    });
+}
+
+// Инициализация слайдера
+updateSlider();

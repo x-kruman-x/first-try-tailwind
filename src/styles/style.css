@@ -247,3 +247,69 @@ a:hover {
     font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
+
+.page-title {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 150px; /* Ширина миниатюры */
+  height: auto; /* Высота пропорциональна ширине */
+  cursor: pointer; /* Указатель при наведении */
+  margin: 0 5px; /* Отступ между миниатюрами */
+  opacity: 0.6; /* Начальная прозрачность */
+  transition: opacity 0.3s; /* Плавный переход для изменения прозрачности */
+}
+
+.thumbnail:hover {
+  opacity: 1; /* Полная непрозрачность при наведении */
+}
+
+.thumbnail.active {
+  opacity: 1; /* Обводка для активной миниатюры */
+}
