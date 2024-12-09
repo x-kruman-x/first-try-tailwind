@@ -50,8 +50,20 @@ handleFormSubmit(form1);
 handleFormSubmit(form2);
 handleFormSubmit(form3);
 
-document.querySelector('#burger-menu').addEventListener('click', () => {
-    document.querySelector('#burger-menu').classList.toggle('hidden');
+document.querySelector('#burger-btn-open').addEventListener('click', () => {
+    document.querySelector('#burger-menu').classList.remove('hidden');
+})
+
+document.querySelector('#burger-btn-close').addEventListener('click', () => {
+    document.querySelector('#burger-menu').classList.add('hidden');
+})
+
+const burgerMenuLinks = document.querySelectorAll('.burger-menu-link');
+
+burgerMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('#burger-menu').classList.add('hidden');
+    });
 })
 
 const slider = document.querySelector('.slider');

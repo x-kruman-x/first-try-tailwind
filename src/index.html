@@ -22,7 +22,7 @@
 </head>
 
 <body class="relative">
-    <header class="bg-[#12100F80] fixed w-full top-0 z-50">
+    <header class="bg-[#12100F80] fixed w-full top-0 z-50 backdrop-blur-sm">
         <nav class="mx-auto flex items-center justify-between px-[26px] py-[18px] lg:px-8" aria-label="Global">
             <div class="flex">
                 <a href="#">
@@ -31,50 +31,47 @@
                 </a>
             </div>
             <div class="hidden lg:flex lg:gap-x-[30px] xl:gap-x-[36px] 2xl:gap-x-[48px]">
-                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">О нас</a>
-                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Услуги</a>
-                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Проекты</a>
-                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Отзывы</a>
-                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Рекомендации</a>
-                <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Контакты</a>
+                <a href="#about" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">О нас</a>
+                    <a href="#services" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Услуги</a>
+                    <a href="#projects" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Проекты</a>
+                    <a href="#reviews" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Отзывы</a>
+                    <a href="#recommendations" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Рекомендации</a>
+                    <a href="#contacts" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Контакты</a>
             </div>
             <div class="flex items-center gap-[60px]">
-                <button class="py-[9px] px-[36px] 2xl:px-[66px] text-[15px] leading-[18px] border-2 border-copper font-semibold hover:bg-copper">Оставить заявку</button>
+                <button class=" hidden sm:block text-white py-[9px] px-[36px] 2xl:px-[66px] text-[15px] leading-[18px] border-2 border-copper font-semibold hover:bg-copper">Оставить заявку</button>
                 <div class="flex lg:hidden text-white">
-                    <button id="burger-btn" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="size-6" fill="#B7976E" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
+                    <button id="burger-btn-open" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <img src="./assets/img/burger-button.svg" alt="button">
                     </button>
                 </div>
             </div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" id="burger-menu" role="dialog" aria-modal="true">
+        <div class="hidden" id="burger-menu" role="dialog" aria-modal="true">
             <!-- Background backdrop, show/hide based on slide-over state. -->
             <div class="fixed inset-0 z-10"></div>
             <div
-                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-defaultBackground p-10">
-                <div class="flex justify-end">
-                    <button type="button">
+                class="fixed top-0 bottom-auto right-0 z-10 w-full overflow-y-auto bg-defaultBackground p-10">
+                <div class="flex justify-end mb-[10px]">
+                    <button id="burger-btn-close" type="button">
                         <img src="./assets/img/close-btn.svg" alt="close btn">
                     </button>
                 </div>
-                <div class="border-b-2 border-copper w-full">
-                    <div class="">
-                        <div class="flex flex-col items-center gap-30">
-                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">О нас</a>
-                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Услуги</a>
-                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Проекты</a>
-                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Отзывы</a>
-                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Рекомендации</a>
-                            <a href="#" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Контакты</a>
+                <div class="w-full">
+                    <div class="flex flex-col items-center gap-[50px]">
+                        <a href="#about" class="burger-menu-link text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">О нас</a>
+                        <a href="#services" class="burger-menu-link text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Услуги</a>
+                        <a href="#projects" class="burger-menu-link text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Проекты</a>
+                        <a href="#reviews" class="burger-menu-link text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Отзывы</a>
+                        <a href="#recommendations" class="burger-menu-link text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Рекомендации</a>
+                        <a href="#contacts" class="burger-menu-link text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Контакты</a>
+                        <button class=" text-white py-[9px] px-[36px] 2xl:px-[66px] text-[15px] leading-[18px] border-2 border-copper font-semibold hover:bg-copper">Оставить заявку</button>
                     </div>
                 </div>
+                <div class="absolute left-0 bottom-0 h-[1px] w-full bg-copper"></div>
             </div>
+            <div class="mt-[472px] bg-defaultBackground blur w-full h-[100vh]"></div>
         </div>
     </header>
     <section class="header-page" id="header-page">
@@ -85,7 +82,7 @@
                 </video>
 
                 <div class="content">
-                    <div class="container">
+                    <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px]">
                         <div class="content-layout">
                             <div class="content-layout-titles">
                                 <div class="content-layout-subtitle">
@@ -133,7 +130,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-defaultBackground py-16">
+    <section id="about" class="bg-defaultBackground py-16">
         <div class="container flex flex-col gap-[52px] md:flex-row px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px]">
             <div class="flex flex-col gap-[19px] sm:items-center lg:w-2/3">
                 <h2
@@ -171,7 +168,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-wrap">
+    <section id="services" class="flex flex-wrap">
         <div
             class="w-full sm:w-1/2 xl:w-1/4 group relative overflow-hidden before:content-[''] before:absolute before:w-[2px] before:h-full before:z-10 before:ml-[10px] before:top-0 before:left-0 before:bg-white/20 before:pointer-events-none 2xl:before:ml-[20px] after:absolute after:top-0 after:right-0 after:content-[''] after:w-[2px] after:h-full after:mr-[10px] after:bg-white/20 after:pointer-events-none 2xl:after:mr-[20px]">
             <div class="absolute top-[10px] z-10 2xl:top-[20px] bg-white/20 w-full h-[2px] pointer-events-none"></div>
@@ -409,7 +406,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-parallax-background bg-fixed bg-cover bg-center">
+    <section id='projects' class="bg-parallax-background bg-fixed bg-cover bg-center">
         <div class="bg-alabino-gradient-vertical">
             <div
                 class="bg-black/50">
@@ -440,67 +437,51 @@
         </div>
     </section>
     <section class="bg-defaultBackground">
-        <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] py-[64px] flex flex-col-reverse gap-6 bg-alabino-gradient-horizontal">
-            <div class="flex flex-col gap-[57px]">
-                <div class="flex flex-col ">
-                    <h2 class="text-[34px] leading-[39px]"><span class="text-copper">Выбор коттеджа</span> в Алабино.</h2>
-                    <p class="text-[18px] leading-[25px] font-normal">Будущие жители поселка могут выбрать подходящий для их семьи проект дома с удобным расположением, специально разработанным одним из ведущих российских архитектурных бюро для «Rezhar Group».</p>
-                    <p class="text-whitegray text-[18px] leading-[25px] font-normal">Мы стремились создать современный, практичный и функциональный дизайн интерьера вашего загородного дома. Ведь это не только о красоте и эстетике, но и о возможности наслаждаться каждым днём, не ограничивая себя ни в чем.</p>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <button class="border-[1px] text-white border-copper bg-transparent px-[66px] py-[16px] hover:bg-copper transition duration-300">Ознакомиться с дизайн-проектом</button>
-                    <button class="border-[1px] text-white border-transparent bg-copper px-[66px] py-[16px] hover:bg-copper hover:border-copper transition duration-300">Подобрать подходящий участок</button>
-                </div>
-            </div>
-            <div class="flex flex-col gap-[10px]">
-                <div class="flex flex-col items-center justify-end gap-[20px]">
-                    <img src="./assets/img/house-plan.svg" alt="house plan">
-                    <p class="w-full text-whitegray text-[10px] leading-[12px] font-normal">Изображения демонстрируют типовой проект (итоговый результат может отличаться от представленного)</p>
-                </div>
-                <div class="slider-container">
-                    <div class="slider">
-                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 1">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 2">
-                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 3">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 4">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 5">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 6">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 7">
+        <div class="bg-alabino-gradient-horizontal">
+            <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] py-[64px] flex flex-col-reverse lg:flex-row gap-6 bg-alabino-gradient-horizontal">
+                <div class="flex flex-col gap-[38px] lg:gap-[47px] items-center justify-between lg:w-1/2 lg:items-start xl:w-auto xl:justify-normal">
+                    <div class="flex flex-col gap-[25px] lg:gap-[30px] relative">
+                        <h2 class="text-[20px] sm:text-[34px] leading-[23px] sm:leading-[39px] xl:absolute text-nowrap"><span class="text-copper">Выбор коттеджа</span> в Алабино.</h2>
+                        <p class="text-[14px] leading-[18px] sm:text-[18px] sm:leading-[25px] font-normal xl:w-[576px] xl:absolute xl:bg-[#12100F4D] xl:py-[20px] xl:pr-[30px] xl:top-[60px] z-10 backdrop-blur-sm">Будущие жители поселка могут выбрать подходящий для их семьи проект дома с удобным расположением, специально разработанным одним из ведущих российских архитектурных бюро для «Rezhar Group».</p>
+                        <p class="text-whitegray text-[14px] leading-[18px] sm:text-[18px] sm:leading-[25px] font-normal xl:mt-[210px]">Мы стремились создать современный, практичный и функциональный дизайн интерьера вашего загородного дома. Ведь это не только о красоте и эстетике, но и о возможности наслаждаться каждым днём, не ограничивая себя ни в чем.</p>
                     </div>
-                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
-                    
-                    <div class="thumbnails">
-                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 1" class="thumbnail">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 2" class="thumbnail">
-                        <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 3" class="thumbnail">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 4" class="thumbnail">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 5" class="thumbnail">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 6" class="thumbnail">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 7" class="thumbnail">
+                    <div class="flex flex-col gap-5 max-w-[384px]">
+                        <button class="w-full border-[1px] text-white border-copper bg-transparent text-[14px] leading-[18px] px-[22px] sm:px-[66px] py-[16px] hover:bg-copper transition duration-300">Ознакомиться с дизайн-проектом</button>
+                        <button class="w-full border-[1px] text-white border-transparent bg-copper text-[14px] leading-[18px] px-[22px] sm:px-[66px] py-[16px] hover:bg-copper/30 hover:border-copper transition duration-300">Подобрать подходящий участок</button>
                     </div>
                 </div>
-
-                <!-- <div id="my-keen-slider" class="keen-slider">
-                    <div class="keen-slider__slide number-slide1">
-                        <img src="./assets/img//alabino-slider-2.jpg" alt="slider img">
+                <div class="flex flex-col gap-[10px] lg:w-1/2 lg:gap-[54px] xl:w-[87%] xl:gap-[48px]">
+                    <div class="flex flex-col sm:flex-row items-center justify-end gap-[20px] sm:px-[42px] md:px-[132px] lg:px-0 xl:ml-auto xl:w-[451px] xl:gap-[24px]">
+                        <img class="w-[166px]" src="./assets/img/house-plan.svg" alt="house plan">
+                        <p class="w-full text-whitegray text-[10px] leading-[12px] font-normal">Изображения демонстрируют типовой проект (итоговый результат может отличаться от представленного)</p>
                     </div>
-                    <div class="keen-slider__slide number-slide2">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="slider img">
+                    <div class="slider-container relative">
+                        <div class="slider lg:h-[360px] xl:w-[624px]">
+                            <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 1">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 2">
+                            <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 3">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 4">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 5">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 6">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 7">
+                        </div>
+                        <button class="prev-button absolute left-0 sm:top-[40%] z-50 w-[24px] h-[24px]" aria-label="Посмотреть предыдущий слайд">
+                            <img src="./assets/img/slider-prev-btn.svg" alt="prev btn">
+                        </button>
+                        <button class="next-button absolute right-0 sm:top-[40%] z-50 w-[24px] h-[24px]" aria-label="Посмотреть следующий слайд">
+                            <img src="./assets/img/slider-next-btn.svg" alt="next btn">
+                        </button>
+                        <div class="thumbnails hidden sm:flex lg:h-[80px] xl:h-[97px]">
+                            <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 1" class="thumbnail">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 2" class="thumbnail">
+                            <img src="./assets/img//alabino-slider-2.jpg" alt="Thumbnail 3" class="thumbnail">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 4" class="thumbnail">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 5" class="thumbnail">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 6" class="thumbnail">
+                            <img src="./assets/img//alabino-slider-3.jpg" alt="Thumbnail 7" class="thumbnail">
+                        </div>
                     </div>
-                    <div class="keen-slider__slide number-slide3">
-                        <img src="./assets/img//alabino-slider-2.jpg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide4">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide5">
-                        <img src="./assets/img//alabino-slider-2.jpg" alt="slider img">
-                    </div>
-                    <div class="keen-slider__slide number-slide6">
-                        <img src="./assets/img//alabino-slider-3.jpg" alt="slider img">
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -547,7 +528,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-defaultBackground">
+    <section id="reviews" class="bg-defaultBackground">
         <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] pt-[128px] pb-[64px] flex flex-col gap-10">
             <h2 class="text-[34px] leading-10 text-copper ">Отзывы наших клиентов</h2>
             <div class="flex flex-col gap-8 lg:flex-row">
@@ -589,7 +570,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-defaultBackground">
+    <section id="recommendations" class="bg-defaultBackground">
         <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] pb-[64px] pt-[32px] flex flex-col gap-[30px]">
             <h2 class="text-[34px] leading-[39px] text-copper">Часто задаваемые вопросы</h2>
             <div class="grid lg:grid-cols-2 lg:gap-x-[48px]">
@@ -764,7 +745,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-submit-application bg-center bg-no-repeat bg-cover">
+    <section id="contacts" class="bg-submit-application bg-center bg-no-repeat bg-cover">
         <div class="bg-black/80 w-full h-full py-[65px]">
             <div class="container px-3 sm:px-[18px] md:px-[24px] lg:px-[32px] xl:px-[113px] flex flex-col gap-6 lg:flex-row xl:gap-[80px]">
                 <div class="w-full text-center flex flex-col gap-3 lg:text-left lg:w-1/3 xl:gap-[30px]">
@@ -803,107 +784,33 @@
             </div>
         </div>
     </section>
-    
+    <footer class="bg-[#12100F80] w-full px-[26px] py-[18px]">
+        <nav class="mx-auto flex flex-col gap-[30px] items-center justify-between lg:flex-row" aria-label="Global">
+            <div class="flex">
+                <a href="#">
+                    <img class="w-[142px]" src="./assets/img/Logo.png"
+                        alt="logo">
+                </a>
+            </div>
+            <div class="flex flex-col gap-[30px] items-center lg:items-end 2xl:flex-row 2xl:justify-between 2xl:w-[85%]">
+                <div class="flex flex-wrap gap-[24px] justify-center lg:gap-x-[30px] xl:gap-x-[36px] 2xl:gap-x-[48px]">
+                    <a href="#about" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">О нас</a>
+                        <a href="#services" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Услуги</a>
+                        <a href="#projects" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Проекты</a>
+                        <a href="#reviews" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Отзывы</a>
+                        <a href="#recommendations" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Рекомендации</a>
+                        <a href="#contacts" class="text-[15px] leading-[18px] no-underline text-white font-semibol hover:text-copper hover:transition-all hover:duration-300">Контакты</a>
+                </div>
+                <div class="flex flex-col gap-[24px] sm:flex-row">
+                    <a href="./politics.html" class="text-[15px] no-underline text-whitegray leading-[18px] font-semibol">Пользовательское соглашение</a>
+                    <a href="./politics.html" class="text-[15px] no-underline text-whitegray leading-[18px] font-semibol">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </nav>
+        <div class="text-[#474747] text-[12px] leading-[15px] text-center mt-6 lg:text-left">Если какое-либо положение (или часть любого положения) настоящих Положений и условий будет признано незаконным, недействительным или не имеющим исковой силы в соответствии с любым применимым законодательством, такой термин, поскольку он отделен от остальных условий, будет считаться исключенным из настоящего соглашения и никоим образом не влияет на законность, действительность или исковую силу остальных условий.</div>
+    </footer>
     <script src="./js/main.js"></script>
     <!-- <script type="module" src="./js/slider.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
-    <!-- <script>
-        function navigation(slider) {
-            let wrapper, dots, arrowLeft, arrowRight
-
-            function markup(remove) {
-                wrapperMarkup(remove)
-                dotMarkup(remove)
-                arrowMarkup(remove)
-            }
-
-            function removeElement(elment) {
-                elment.parentNode.removeChild(elment)
-            }
-
-            function createDiv(className) {
-                var div = document.createElement("div")
-                var classNames = className.split(" ")
-                classNames.forEach((name) => div.classList.add(name))
-                return div
-            }
-
-            function arrowMarkup(remove) {
-                if (remove) {
-                    removeElement(arrowLeft)
-                    removeElement(arrowRight)
-                    return
-                }
-                arrowLeft = createDiv("arrow arrow--left")
-                arrowLeft.addEventListener("click", () => slider.prev())
-                arrowRight = createDiv("arrow arrow--right")
-                arrowRight.addEventListener("click", () => slider.next())
-
-                wrapper.appendChild(arrowLeft)
-                wrapper.appendChild(arrowRight)
-            }
-
-            function wrapperMarkup(remove) {
-                if (remove) {
-                    var parent = wrapper.parentNode
-                    while (wrapper.firstChild)
-                        parent.insertBefore(wrapper.firstChild, wrapper)
-                    removeElement(wrapper)
-                    return
-                }
-                wrapper = createDiv("navigation-wrapper")
-                slider.container.parentNode.appendChild(wrapper)
-                wrapper.appendChild(slider.container)
-            }
-
-            function dotMarkup(remove) {
-                if (remove) {
-                    removeElement(dots)
-                    return
-                }
-                dots = createDiv("dots")
-                slider.track.details.slides.forEach((_e, idx) => {
-                    var dot = createDiv("dot")
-                    dot.addEventListener("click", () => slider.moveToIdx(idx))
-                    dots.appendChild(dot)
-                })
-                wrapper.appendChild(dots)
-            }
-
-            function updateClasses() {
-                var slide = slider.track.details.rel
-                slide === 0
-                    ? arrowLeft.classList.add("arrow--disabled")
-                    : arrowLeft.classList.remove("arrow--disabled")
-                slide === slider.track.details.slides.length - 1
-                    ? arrowRight.classList.add("arrow--disabled")
-                    : arrowRight.classList.remove("arrow--disabled")
-                Array.from(dots.children).forEach(function (dot, idx) {
-                    idx === slide
-                        ? dot.classList.add("dot--active")
-                        : dot.classList.remove("dot--active")
-                })
-            }
-
-            slider.on("created", () => {
-                markup()
-                updateClasses()
-            })
-            slider.on("optionsChanged", () => {
-                console.log(2)
-                markup(true)
-                markup()
-                updateClasses()
-            })
-            slider.on("slideChanged", () => {
-                updateClasses()
-            })
-            slider.on("destroyed", () => {
-                markup(true)
-            })
-        }
-
-        var slider = new KeenSlider("#my-keen-slider", {}, [navigation])
-    </script> -->
 </body>
 </html>
